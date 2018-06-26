@@ -1,0 +1,1 @@
+"use strict";$(function(){$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",function(o){console.log(o);for(var t="",d=0;d<o.length;d++)console.log(o[d].imgsUrl,o[d].goodsName,o[d].price),t+="<a href=''><dl><dt><img src=\""+o[d].goodsListImg+'"></dt><dd><span>'+o[d].goodsName+"</span><p><em>¥</em>"+o[d].price+"</p></dd></dl></a>";$(".list").html(t)})});

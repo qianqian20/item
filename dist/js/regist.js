@@ -1,3 +1,1 @@
-(function(){
-	document.write("aa");
-})();
+"use strict";document.write("aa");

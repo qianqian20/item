@@ -1,2 +1,1 @@
-var num=30;
-var count = 40; 
+"use strict";$(function(){$("#btn1").click(function(){$.getJSON("http://datainfo.duapp.com/shopdata/userinfo.php",{status:"login",userID:$(".user1").val(),password:$(".password1").val()},function(t){0==t?alert("用户名不存在"):2==t?alert("账号密码错误"):(window.location.replace("../index.html"),console.log(t))})}),$("#btn2").click(function(){$.getJSON("http://datainfo.duapp.com/shopdata/userinfo.php",{status:"register",userID:$(".user2").val(),password:$(".password2").val()},function(t){console.log(t),0==t&&alert("用户名重名请重新输入！"),1==t&&(alert("注册成功！"),window.location.replace("login.html"))})})});
