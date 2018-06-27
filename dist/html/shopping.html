@@ -61,9 +61,9 @@
 				</div>
 				<div class="jingxuan">
 					<div class="store">蜜芽精选商家</div>
-					<div class="details">
-						<div class="xiangqing">
-							<ul>
+					<div id="details">
+						<div id="xiangqing">
+							<!--<ul>
 								<li><input type="checkbox"></li>
 								<li><img src="../images/13.jpg"></li>
 								<li>ddedededededede</li>
@@ -78,13 +78,26 @@
 								</li>
 								<li>￥199.00</li>
 								<li><span>删除</span></li>
-							</ul>
+							</ul>-->
 						</div>
 					</div>
 				</div>
 				
 				
-				<div class="jiesuan"></div>
+				<div class="jiesuan">
+					<div class="funcs">
+						<input type="checkbox" />
+						<span>全选</span>
+						<a href="">删除选择商品</a>
+						<a href="">清除无效商品</a>
+						<a href="">移入收藏夹</a>
+					</div>
+					<div class="jia">
+						<div class="choosenum">已选择商品<span>0</span>件</div>
+						<div class="total">合计（不含运费和进口费）:<span>￥0</span></div>
+					</div>
+					<div class="sum">去结算</div>
+				</div>
 			</div>
 			
 			<div class="main">
@@ -261,9 +274,11 @@
 			</div>
 		</footer>
 		
-		
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		
 		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../js/shopping.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 	</body>
 </html>
